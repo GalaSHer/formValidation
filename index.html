@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Validation Form</title>
+</head>
+<body>
+  <main class="container">
+    <div class="wrapper">
+    <h1 class="title">Контакты</h1>
+    <form class="form" name="form__contacts" novalidate>
+      <label class="form__field">
+        <input class="form__input" id="name" name="name" placeholder="Фамилия, имя, отчество( при наличии)" >
+        <span class="form__error name-error">Разрешены только латинские, кириллические буквы и пробелы</span>
+      </label>
+      <label class="form__field">
+        <input class="form__input" id="email" name="email" placeholder="Email" >
+        <span class="form__error email-error">Обязательны @ и . </span>
+      </label>
+      <label class="form__field">
+        <input class="form__input" id="phone" name="phone" placeholder="+7..." >
+        <span class="form__error phone-error">Введите телефон в формате +7xxxxxxxxxx</span>
+      </label>
+      <button type="submit" class="form__button">Отправить</button>
+    </form>
+    </div>
+  </main>
+</body>
+<script src="./index.js"></script>
+</html>

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #e8e8e8;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 50vw;
+}
+
+.title {
+  color: #7e97b8;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
+
+.form__field {
+  width: 90%;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  border: 1px #7e97b8 solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form__input:hover {
+  transform: scale(1.05);
+}
+
+.form__input:focus-visible {
+  outline: 2px #7e97b8 solid;
+}
+
+.form__input::placeholder {
+  color: #7e97b8;
+}
+
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 30px;
+  border-width: 2px 2px 2px 2px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+  color: #7e97b8;
+  font-size: 0.8rem;
+  letter-spacing: 0.4px;
+  background-color: #e0e8ef;
+  transition: 0.2s;
+  transform: translate(0px, 0px) rotate(0deg);
+}
+.form__button:hover {
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+  color: #516d91;
+  background-color: #e5edf5;
+}
+
+.form__button:disabled {
+  box-shadow: none;
+  color: #7e97b8;
+  background-color: #e0e8ef;
+  cursor: none;
+}
+
+.form__error {
+  display: none;
+  margin-inline-start: 6px;
+  margin-block-start: 4px;
+  color: rgba(255, 0, 0, 0.687);
+  font-size: 10px;
+}
+
+.name-error_active {
+  display: block;
+}
+
+.email-error_active {
+  display: block;
+}
+
+.phone-error_active {
+  display: block;
+}
